@@ -23,7 +23,7 @@
             echo "Deleted . <br>";
         }
 
-        echo "<a href=studentadvisor.php?sid={$asid}>Back Student advisor</a>";
+        echo "<br><br><a href=studentadvisor.php?sid={$asid} class='button'>Back Student advisor</a>";
     ?>
 </body>
 </html>

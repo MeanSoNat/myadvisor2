@@ -9,7 +9,7 @@
 
 </head>
 <body>
-    <?php
+<?php
     $sid = $_GET['sid'];
 
     $link = mysqli_connect("localhost", "root", "", "myadvisor2") or die("disconnect from database.");
@@ -44,7 +44,9 @@
         }
 
     echo "</table>";
-        echo "<a href='studentlist.php'>go list</a>";
+        echo "<br><a href='studentlist.php' class='button'>go list</a>";
     ?>
+
+    
 </body>
 </html>

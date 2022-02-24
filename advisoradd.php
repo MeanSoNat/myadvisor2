@@ -28,8 +28,8 @@
                     echo "<option value={$data['tid']}>{$data['tname']}</option>";
                 }
         echo "</select>";
-        echo "<input type='submit' value='save'>";
-        echo "<a href=studentlist.php>go list</a>";
+        echo "<input type='submit' value='save'> <br><br>";
+        echo "<a href=studentlist.php class='button'>go list</a>";
         echo "</form>";
     ?>
 </body>

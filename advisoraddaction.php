@@ -18,11 +18,12 @@
         echo $sql. "<br>";
         $result = mysqli_query($link, $sql);
         if (!$result) {
-            echo "Cannot Add";
+            echo "Cannot Add" . "<br>";
         } else {
-            echo "Advisor added.";
+            echo "Advisor added." . "<br>";
         }
-        echo "<a href=studentadvisor.php?sid={$asid}>go back</a>";
+        echo "<br>";
+        echo "<a href=studentadvisor.php?sid={$asid} class='button'>go back</a>";
         mysqli_close($link);
     ?>
 </body>
