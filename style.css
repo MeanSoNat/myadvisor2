@@ -1,0 +1,59 @@
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+  }
+  /* Zebra striping */
+  tr:nth-of-type(odd) { 
+    background: #eee; 
+  }
+  th { 
+    background: #333; 
+    color: white; 
+    font-weight: bold; 
+  }
+  td, th { 
+    padding: 6px; 
+    border: 1px solid #ccc; 
+    text-align: left; 
+  }
+  
+  
+  
+  .btn-grad {background-image: linear-gradient(to right, #232526 0%, #414345  51%, #232526  100%)}
+  .btn-grad {
+     margin: 10px;
+     padding: 15px 45px;
+     text-align: center;
+     text-transform: uppercase;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color: white;            
+     box-shadow: 0 0 20px #eee;
+     border-radius: 10px;
+     display: block;
+   }
+  
+   .btn-grad:hover {
+     background-position: right center; /* change the direction of the change here */
+     color: #fff;
+     text-decoration: none;
+   }
+  
+   .btn-edit {background-image: linear-gradient(to right, #5656d6);}
+   .btn-edit {
+    margin: 2px;
+    padding: 10px 10px;
+    text-align: center;
+    text-transform:unset;
+    transition: 0.25s;
+    background-size: 5%;
+    color: rgb(17, 0, 0);            
+    background-color: 0 0 5px rgb(0, 0, 0);
+    border-radius: 5px;
+    display:contents;
+   }
+   .btn-edit:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: rgb(89, 0, 255);
+    text-decoration: none;
+  }
