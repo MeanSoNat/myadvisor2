@@ -18,11 +18,13 @@
     $result = mysqli_query($link, $sql);
     $data = mysqli_fetch_array($result);
 
-    echo "Student_ID: ". $data['sid'] . "<br>";
-    echo "Student_Name: " . $data['sname'] . "<br>";
-
+    echo "<table class=table-advisor border=1>";
+        echo "<td>Student_ID: ". $data['sid'] . "<td>";
+        echo "<td>Student_Name: " . $data['sname'] . "<td>";
+    echo "</table>";
+    
     //add advisor
-    echo "<a href= advisoradd.php?sid={$data['sid']}>add advisor</a>";
+    echo "<a href= advisoradd.php?sid={$data['sid']}>add advisor</a>";  
 
     echo "<table border=1>";
         echo "<thead>";
@@ -42,8 +44,10 @@
             echo "<td>{$data['tname']}</td>";
             echo "<td><a href=advisordelete.php?asid={$data['asid']}&atid={$data['atid']}>delete</a></td>";
         echo "</tr>";
-        }
 
+        
+    }
+  
     echo "</table>";
         echo "<br><a href='studentlist.php' class='button'>go list</a>";
     ?>
