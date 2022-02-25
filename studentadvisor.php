@@ -10,6 +10,7 @@
 </head>
 <body>
 <?php
+    sleep(rand(1,2));
     $sid = $_GET['sid'];
 
     $link = mysqli_connect("localhost", "root", "", "myadvisor2") or die("disconnect from database.");
